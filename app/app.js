@@ -11,6 +11,8 @@
     'myApp.complete',
     // Directives
     'myApp.activeLink',
-    'myApp.version'
+    'myApp.version',
+    // Services
+    'myApp.task'
   ]);
 })();
