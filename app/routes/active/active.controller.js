@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('myApp.active', ['ngRoute'])
+  angular.module('myApp.active')
 
   .controller('ActiveCtrl', [function() {
     
