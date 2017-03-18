@@ -17,22 +17,30 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="nav nav-pills nav-stacked" ma-active-link>
-    <li role="presentation">
-      <a href="#!/active">Active</a>
-    </li>
-    <li role="presentation">
-      <a href="#!/complete">Complete</a>
-    </li>
-  </ul>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Navigation -->
+      <ul class="nav nav-pills nav-stacked col-md-3" ma-active-link>
+        <li role="presentation">
+          <a href="#!/active">Active</a>
+        </li>
+        <li role="presentation">
+          <a href="#!/complete">Complete</a>
+        </li>
+      </ul>
+      <!-- Todo Lists -->
+      <div ng-view class="col-md-9"></div>
+    </div>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <div class="row">
+      <div>Angular seed app: v<span app-version></span></div>
+      <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    </div>
+  </div>
 
-  <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
