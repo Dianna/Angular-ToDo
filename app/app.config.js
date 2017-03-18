@@ -8,11 +8,11 @@
 
     $routeProvider
     .when('/active', {
-      templateUrl: 'active/active.html',
+      templateUrl: 'routes/active/active.html',
       controller: 'ActiveCtrl'
     })
     .when('/complete', {
-      templateUrl: 'complete/complete.html',
+      templateUrl: 'routes/complete/complete.html',
       controller: 'CompleteCtrl'
     })
     .otherwise({redirectTo: '/active'});
