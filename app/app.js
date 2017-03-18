@@ -6,6 +6,7 @@
     'ngRoute',
     'ui.bootstrap',
     // Routes
+    'myApp.allTasks',
     'myApp.active',
     'myApp.complete',
     // Directives

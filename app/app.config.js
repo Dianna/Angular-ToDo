@@ -7,6 +7,6 @@
     $locationProvider.hashPrefix('!');
 
     $routeProvider
-    .otherwise({redirectTo: '/active'});
+    .otherwise({redirectTo: '/'});
   }]);
 })();
