@@ -1,1 +1,3 @@
-<p>all tasks</p>
+<div>
+  <ma-task-item ng-repeat="(key, todo) in vm.allTasks" key="key" todo="todo" track by key></ma-task-item>
+</div>
